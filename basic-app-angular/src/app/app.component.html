@@ -1,0 +1,39 @@
+<div class="container">
+  <div>
+    <h1>
+      Template
+    </h1>
+    <p>Hello World</p>
+    <p>1 + 2 = {{1+2}}</p>
+    <p>10 is {{10%2==0?"Even":"Odd"}}</p>
+  </div>
+  <hr>
+  <h1>Template Statement events</h1>
+  <p>Welcome {{title|uppercase}}</p>
+  <p (click)="changeName()">Click Me</p>
+  <hr>
+  <h1>Structural Directives</h1>
+  <div *ngIf="run">
+    <p>My App is running</p>
+  </div>
+  <div *ngFor="let u of user">
+    {{u.name}}
+    {{u.age}}
+    <div [ngSwitch]="u.gender">
+    <div *ngSwitchCase="m" id="male">
+      {{u.name}}
+    </div>
+    <div *ngSwitchCase="f" id="female">
+      {{u.name}}
+    </div>
+    </div>
+    <hr>
+    
+  </div>
+  
+  
+</div>
+
+
+
+<router-outlet></router-outlet>

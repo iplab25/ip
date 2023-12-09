@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    
+</head>
+<body>
+    <script>
+    function validatePalindrome(str){
+        let rev_arr = str.split("").reverse()
+        let rev  = rev_arr.join("")
+        alert(rev)
+        if(rev==str){
+            alert("Palindrome")
+        }else{
+            alert("Not Palindrome")
+        }
+    }
+
+    const str = prompt("Enter a string or number: ")
+    validatePalindrome(str)
+
+    </script>
+</body>
+</html>

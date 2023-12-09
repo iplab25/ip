@@ -1,0 +1,22 @@
+BEA 
+{ 
+margin:10px; 
+background-color:pink; 
+font-family:verdana; 
+} 
+
+name 
+{ 
+display:block; 
+font-weight:bold; 
+text-align: center; 
+line-break: auto; 
+} 
+type,screen_size,resolution,price,viewing_angle,os 
+{ 
+text-align: center; 
+display:block; 
+color:blue; 
+font-size:small; 
+font-style:italic; 
+} 

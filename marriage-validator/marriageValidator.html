@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage Validator</title>
+</head>
+<body>
+    <h1>Welcome to Marriage Validator</h1>
+    <form action="">
+    <label for="bride">Bride's Age: </label><br>
+    <input type="text" name="bride" id="bride" required><br><br>
+
+    <label for="bride">Grooms's Age: </label><br>
+    <input type="text" name="groom" id="groom" required><br><br>
+
+    <button type="submit" onclick="validate()">Validate</button>
+    <button type="reset">Clear</button>
+    </form>
+    <script>
+       
+        function validate(){
+        var bride = document.getElementById("bride").value;
+        var groom = document.getElementById("groom").value;
+        if(bride>=18 && groom>=21){
+            alert("Marriage Valid")
+        }else{
+            alert("Invalid Marriage")
+        }
+    }
+    </script>
+
+    
+</body>
+</html>
